@@ -11,4 +11,10 @@ class Artist
   def self.all
     @@all
   end
+
+  def songs
+    self.all.select do |x|
+      x.artist == self
+    end
+  end
 end
