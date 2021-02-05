@@ -15,12 +15,13 @@ class Artist
   end
 
   def songs
+    songs = []
     songlist = Song.all.select do |x|
       if x.artist == self
-        x.name
-        binding.pry
+        songs << x.name
       end
     end
+    songs
   end
 
   def new_song(name, genre)
