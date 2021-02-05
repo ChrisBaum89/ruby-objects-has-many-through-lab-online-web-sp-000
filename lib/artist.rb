@@ -15,9 +15,7 @@ class Artist
   end
 
   def songs
-    vtest = self.all.select do |x|
-      x.artist == self
-    end
+    
     binding.pry
   end
 end
