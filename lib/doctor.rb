@@ -5,6 +5,4 @@ class Doctor
     @name = name
   end
 
-  def
-
 end
