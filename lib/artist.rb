@@ -16,6 +16,6 @@ class Artist
     vtest = self.all.select do |x|
       x.artist == self
     end
-    
+
   end
 end
