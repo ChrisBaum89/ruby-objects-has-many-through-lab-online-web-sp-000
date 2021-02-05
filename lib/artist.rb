@@ -18,6 +18,6 @@ class Artist
   def songs
     Song.all.select do |x|
       x.artist == self.name
-
-
+    end
+  end
 end
