@@ -23,9 +23,7 @@ class Artist
   end
 
   def genres
-    songs.map do |x|
-      x.genre
-    end
+    songs.map {|x| x.genre}
   end
 
 end
