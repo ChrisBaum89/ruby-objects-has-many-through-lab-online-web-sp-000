@@ -20,7 +20,7 @@ class Artist
         x.name
       end
     end
-    bindi
+    binding.pry
   end
 
   def new_song(name, genre)
