@@ -18,7 +18,7 @@ class Artist
     songslist = Song.all.select do |x|
       x.artist == self.name
     end
-    binding.pry
+    #binding.pry
   end
 
   def new_song(name, genre)
