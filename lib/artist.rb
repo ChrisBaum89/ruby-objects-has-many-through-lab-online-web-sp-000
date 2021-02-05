@@ -20,11 +20,6 @@ class Artist
     end
   end
 
-  def new_song(name, genre)
-    newsong = Song.new(name, self.name, genre)
-    #binding.pry
-  end
-
   def genres
     songs.map do |x|
       x.genre
