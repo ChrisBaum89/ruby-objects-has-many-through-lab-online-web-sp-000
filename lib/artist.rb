@@ -30,6 +30,7 @@ class Artist
     genrename = genre.name
     new_song = Song.new(name, self.name, genrename)
     relaysongs = self.songs
+    binding.pry
   end
 
 
