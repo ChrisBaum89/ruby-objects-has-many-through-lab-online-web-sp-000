@@ -7,8 +7,7 @@ class Artist
 
   def initialize(name)
     @name = name
-    @@all << self #<Artist:0x00000000023bf0b8 @name="Jay-Z">
-    #binding.pry
+    @@all << self
   end
 
   def self.all
