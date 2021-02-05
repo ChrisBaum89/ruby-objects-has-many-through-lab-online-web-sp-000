@@ -28,6 +28,7 @@ class Artist
   def genres
     self.songs.select do |x|
       x.genre
+      binding.pry
     end
   end
 
