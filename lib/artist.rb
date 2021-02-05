@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
 
   attr_accessor :name
@@ -16,6 +18,6 @@ class Artist
     vtest = self.all.select do |x|
       x.artist == self
     end
-
+    
   end
 end
