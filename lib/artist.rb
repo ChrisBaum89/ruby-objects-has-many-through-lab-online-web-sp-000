@@ -18,6 +18,7 @@ class Artist
     songlist = Song.all.select do |x|
       if x.artist == self
         x.name
+        binding.pry
       end
     end
     binding.pry
