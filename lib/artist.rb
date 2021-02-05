@@ -26,8 +26,9 @@ class Artist
     end
   end
 
-  def new_song(name, genre.name)
-    new_song = Song.new(name, self.name, genre)
+  def new_song(name, genre)
+    genrename = genre.name
+    new_song = Song.new(name, self.name, genrename)
     binding.pry
   end
 
