@@ -16,13 +16,13 @@ class Artist
   end
 
   def songs
-    songsv = Song.all.select do |x|
+    Song.all.select do |x|
       x.artist == self
     end
   end
 
   def new_song(name, genre)
-    newsong = Song.new(name, self.name, genre.name)
+    newsong = Song.new(name, self, genre)
     binding.pry
   end
 
