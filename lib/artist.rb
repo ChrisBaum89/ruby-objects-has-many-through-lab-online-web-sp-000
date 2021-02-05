@@ -19,6 +19,5 @@ class Artist
     songsv = Song.all.select do |x|
       x.artist == self
     end
-    binding.pry
   end
 end
