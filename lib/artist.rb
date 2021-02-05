@@ -15,11 +15,12 @@ class Artist
   end
 
   def songs
-    Song.all.select do |x|
+    songlist = Song.all.select do |x|
       if x.artist == self
         x.name
       end
     end
+    bindi
   end
 
   def new_song(name, genre)
