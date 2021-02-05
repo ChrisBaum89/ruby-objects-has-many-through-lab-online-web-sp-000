@@ -1,6 +1,6 @@
 class Appointment
 
-  def initialize
+  def initialize(name)
 
   end
 
