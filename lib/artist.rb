@@ -15,7 +15,7 @@ class Artist
   end
 
   def songs
-    vsongs = Song.all.select do |x|
+    @songs = Song.all.select do |x|
       x.artist == self
     end
     binding.pry
