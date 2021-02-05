@@ -22,7 +22,6 @@ class Artist
       end
     end
     songs
-    binding.pry
   end
 
   def new_song(name, genre)
