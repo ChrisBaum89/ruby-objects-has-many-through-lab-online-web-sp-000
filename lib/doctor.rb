@@ -5,7 +5,7 @@ class Doctor
   def initialize(name)
     @name = name
     @@all << self
-    @@all
+    binding.pry
   end
 
 end
