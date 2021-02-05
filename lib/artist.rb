@@ -20,4 +20,10 @@ class Artist
       x.artist == self
     end
   end
+
+  def new_song(name, genre)
+    newsong = Song.new(name, self.name, genre.name)
+  
+  end
+  
 end
