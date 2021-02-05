@@ -16,12 +16,9 @@ class Artist
 
   def songs
     songs = []
-    songlist = Song.all.select do |x|
-      if x.artist == self
-        songs << x.name
-      end
+    Song.all.select do |x|
+      x.artist == self
     end
-    songs
   end
 
   def new_song(name, genre)
