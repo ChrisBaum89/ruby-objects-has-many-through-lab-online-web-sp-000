@@ -21,16 +21,12 @@ class Artist
   end
 
   def new_song(name, genre)
-    newsong = Song.new(name, self.name, genre)
-    #binding.pry
+    #newsong = Song.new(name, self.name, genre)
+    binding.pry
   end
 
   def genres
-    self.songs.select do |x|
-      binding.pry
-      x.genre
-      binding.pry
-    end
+    
   end
 
 
